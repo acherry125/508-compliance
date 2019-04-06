@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -o"
+    "build": "node-sass ./src/styles.scss ./static/css/styles.css",
+    "start-server": "http-server -o",
+    "start": "run-p start-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
   }
 }
