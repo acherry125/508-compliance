@@ -19,10 +19,6 @@
     margin: 2rem auto;
     background: #f8f8f8;
     box-shadow: 2px 6px 6px #a7a7a7;
-
-    img {
-        margin: 0 auto;
-    }
 }
 
 .spread-list li {
@@ -49,6 +45,9 @@
 
 .img-wrapper {
     padding: 1rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
 input {

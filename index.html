@@ -36,37 +36,39 @@
 
     <main id="main-content" class="main-content">
         <section>
-            <h1>Edit Players</h1>
-            <form>
-                <div>
-                    <h2>Player One</h2>
+            <h1>Retro Game Club</h1>
+            <div class="img-wrapper">
+                <image src="./static/images/games.jpg" alt="This is a random photo.">
+            </div>
+            <h2>Edit Players</h1>
+                <form>
                     <div>
-                        <label>First Name
-                            <input type="text">
-                        </label>
+                        <h3>Player One
+                        </h3>
+                        <div>
+                            <label>First Name
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="p1-last-name">Last Name</label>
+                            <input id="p1-last-name" type="text">
+                        </div>
                     </div>
                     <div>
-                        <label for="p1-last-name">Last Name</label>
-                        <input id="p1-last-name" type="text">
+                        <h3 id="player-two">Player Two</h3>
+                        <div>
+                            <label id="p2-first-name">First Name (Clicking does not focus input)</label>
+                            <input aria-labelledby="player-two p2-first-name" type="text">
+                        </div>
+                        <div>
+                            <label id="p2-last-name">Last Name</label>
+                            <input aria-labelledby="player-two p2-last-name" type="text">
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h2 id="player-two">Player Two</h2>
-                    <div>
-                        <label id="p2-first-name">First Name (Clicking does not focus input)</label>
-                        <input aria-labelledby="player-two p2-first-name" type="text">
-                    </div>
-                    <div>
-                        <label id="p2-last-name">Last Name</label>
-                        <input aria-labelledby="player-two p2-last-name" type="text">
-                    </div>
-                </div>
-                <input type="submit" value="Update" />
-                <button>Cancel</button>
-                <div class="img-wrapper">
-                    <image src="http://lorempixel.com/400/200/" alt="This is a random photo.">
-                </div>
-            </form>
+                    <input type="submit" value="Update" />
+                    <button>Cancel</button>
+                </form>
         </section>
     </main>
     <footer class="footer">

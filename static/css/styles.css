@@ -22,10 +22,6 @@
           box-shadow: 2px 6px 6px #a7a7a7;
 }
 
-.main-content img {
-  margin: 0 auto;
-}
-
 .spread-list li {
   display: inline-block;
 }
@@ -50,6 +46,16 @@
 
 .img-wrapper {
   padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 input {
