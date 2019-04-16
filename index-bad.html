@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>508 Uncompliance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./static/css/normalize.css">
+    <link rel="stylesheet" href="./static/css/main.css">
+</head>
+
+<body id="color-container">
+    <div class="background">
+        <div class="top-nav">
+            <div>
+                <div class="h2" id="nav1-header">Navigation</div>
+                <span tabindex="1" class="skip-link-hidden"><a href="#main-content">Skip</a>to main content</span>
+                <ul class="spread-list">
+                    <li role="menuitem">To see the item featured below item click
+                        <a title="To see the i7 computer in this article, click here!" class="bad"
+                            href="#link-1">here!</a>
+                        <!-- title attribute does nothing -->
+                    </li>
+                    <li><a href="#link-2">Second link!</a></li>
+                    <li><a href="#link-3">Third link!</a></li>
+                    <li><a href="#link-4">Fourth link!</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="side-nav">
+            <div class="h3" id="nav2-header">Side navigation</div>
+            <ul>
+                <li>Go <a href="#link-1" class="bad" title="Go to google.com">here!</a></li>
+                <li><a href="#link-2">Second link!</a></li>
+                <li><a href="#link-3">Third link!</a></li>
+                <li><a href="#link-4">Fourth link!</a></li>
+            </ul>
+        </div>
+
+        <div id="main-content" class="main-content">
+            <div class="button" id="contrast-toggle">Toggle Colors</div>
+            <div class="button" id="deuteranomaly-toggle">Toggle Deuteranomaly colorblindness 5%</div>
+            <div class="button" id="protanopia-toggle">Toggle Protanopia colorblindness 1%</div>
+            <div>
+                <div class="h1">Retro Game Club</div>
+                <p class="subtext">Welcome to the <a href="#" class="bad">retro game club</a>! We are very happy to see
+                    you,
+                    especially if you were
+                    referred from
+                    one of our <a href="#" class="bad">sponsors</a>
+                    Please enter information about your players below! <a href="#" class="bad">Stop by</a> to receive
+                    your welcome
+                    gift!</p>
+                <p class="subtext">
+                    If you have a pc like the one in the photo below, you can enter our <a href="#"
+                        class="bad">raffle</a> for 1,000$! Just tell us why it looks like the one in the photo!
+                </p>
+                <div class="img-wrapper">
+                    <image src="./static/images/games.jpg">
+                </div>
+                <div class="h2">Edit Players</div>
+                <form>
+                    <div>
+                        <div class="h3">Player One</div>
+                        <div>
+                            <input placeholder="First name" type="text">
+                        </div>
+                        <div>
+                            <input placeholder="Last name" id="p1-last-name" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="h3" id="player-two">Player Two</div>
+                        <div>
+                            <input placeholder="First name" type="text">
+                        </div>
+                        <div>
+                            <input placeholder="Last name" type="text">
+                        </div>
+                    </div>
+                    <input type="submit" value="Update" />
+                    <button>Cancel</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="h4">Footers go down below.</div>
+            <div>
+                <ul>
+                    <li><a href="#link-1">First link!</a></li>
+                    <li><a href="#link-2">Second link!</a></li>
+                    <li><a href="#link-3">Third link!</a></li>
+                    <li><a href="#link-4">Fourth link!</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="./static/js/main.js"></script>
+
+</body>
+
+</html>

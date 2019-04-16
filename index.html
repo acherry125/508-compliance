@@ -7,82 +7,97 @@
     <title>508 Compliance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./static/css/normalize.css">
-    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="./static/css/main.css">
 </head>
 
-<body>
-    <header class="top-nav">
-        <nav aria-labelledby="nav1-header">
-            <h2 id="nav1-header">Navigation</h2>
-            <a href="#main-content" class="skip-link-hidden">Skip to main content</a>
-            <ul role="menu" class="spread-list">
-                <li role="menuitem"><a href="#link-1">First link!</a></li>
-                <li role="menuitem"><a href="#link-2">Second link!</a></li>
-                <li role="menuitem"><a href="#link-3">Third link!</a></li>
-                <li role="menuitem"><a href="#link-4">Fourth link!</a></li>
-            </ul>
-        </nav>
-    </header>
+<body id="color-container">
+    <div class="background bad-page">
+        <header class="top-nav" aria-labelledby="nav1-header">
+            <nav>
+                <h2 id="nav1-header">Navigation</h2>
+                <a href="#main-content" class="skip-link-hidden">Skip to main content</a>
+                <ul role="menu" class="spread-list">
+                    <li role="menuitem">To see the item featured below item click
+                        <a class="bad" href="#link-1">here <span class="sr-only">to see the i7 computer in this article
+                                click this</span>!</a>
+                    </li>
+                    <li role="menuitem"><a href="#link-2">Second link!</a></li>
+                    <li role="menuitem"><a href="#link-3">Third link!</a></li>
+                    <li role="menuitem"><a href="#link-4">Fourth link!</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <nav aria-labelledby="nav2-header" class="side-nav">
-        <h3 id="nav2-header">Side navigation</h3>
-        <ul role="menu">
-            <li role="menuitem">Go <a href="#link-1" title="Go to google.com">here!</a></li>
-            <li role="menuitem"><a href="#link-2">Second link!</a></li>
-            <li role="menuitem"><a href="#link-3">Third link!</a></li>
-            <li role="menuitem"><a href="#link-4">Fourth link!</a></li>
-        </ul>
-    </nav>
-
-    <main id="main-content" class="main-content">
-        <section>
-            <h1>Retro Game Club</h1>
-            <div class="img-wrapper">
-                <image src="./static/images/games.jpg" alt="This is a random photo.">
-            </div>
-            <h2>Edit Players</h1>
-                <form>
-                    <div>
-                        <h3>Player One
-                        </h3>
-                        <div>
-                            <label>First Name
-                                <input type="text">
-                            </label>
-                        </div>
-                        <div>
-                            <label for="p1-last-name">Last Name</label>
-                            <input id="p1-last-name" type="text">
-                        </div>
-                    </div>
-                    <div>
-                        <h3 id="player-two">Player Two</h3>
-                        <div>
-                            <label id="p2-first-name">First Name (Clicking does not focus input)</label>
-                            <input aria-labelledby="player-two p2-first-name" type="text">
-                        </div>
-                        <div>
-                            <label id="p2-last-name">Last Name</label>
-                            <input aria-labelledby="player-two p2-last-name" type="text">
-                        </div>
-                    </div>
-                    <input type="submit" value="Update" />
-                    <button>Cancel</button>
-                </form>
-        </section>
-    </main>
-    <footer class="footer">
-        Footers go down below.
-        <nav aria-label="Footer header">
+        <nav aria-labelledby="nav2-header" class="side-nav">
+            <h3 id="nav2-header">Side navigation</h3>
             <ul role="menu">
-                <li role="menuitem"><a href="#link-1">First link!</a></li>
+                <li role="menuitem">Go <a href="#link-1" class="bad" title="Go to google.com">here!</a></li>
                 <li role="menuitem"><a href="#link-2">Second link!</a></li>
                 <li role="menuitem"><a href="#link-3">Third link!</a></li>
                 <li role="menuitem"><a href="#link-4">Fourth link!</a></li>
             </ul>
         </nav>
-    </footer>
-    <script src="./public/js/main.js"></script>
+
+        <main id="main-content" class="main-content" aria-labelledby="main-header">
+            <button id="contrast-toggle">Toggle Colors</button>
+            <button id="deuteranomaly-toggle">Toggle Deuteranomaly colorblindness 1%</button>
+            <button id="protanopia-toggle">Toggle Protanopia colorblindness 1%</button>
+            <section>
+                <h1 id="main-header">Retro Game Club</h1>
+                <p class="subtext">Welcome to the <a href="#" class="bad">retro game club</a>! We are very happy to see
+                    you,
+                    especially if you were
+                    referred from
+                    one of our <a href="#" class="bad">sponsors</a>
+                    Please enter information about your players below! <a href="#" class="bad">Stop by</a> to receive
+                    your welcome
+                    gift!</p>
+                <p class="subtext">
+                    If you have a pc like the one in the photo below, you can enter our <a href="#"
+                        class="bad">raffle</a> for 1,000$! Just tell us why it looks like the one in the photo!
+                </p>
+                <div class="img-wrapper">
+                    <image src="./static/images/games.jpg" alt="Intel i7 inside a retro pc case.">
+                </div>
+                <h2>Edit Players</h1>
+                    <form>
+                        <div>
+                            <div class="h3">Player One</div>
+                            <div>
+                                <input type="text" placeholder="First name">
+                                <!-- https://www.smashingmagazine.com/2018/06/placeholder-attribute/ -->
+                            </div>
+                            <div>
+                                <input id="p1-last-name" placeholder="Last name" type="text">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 id="player-two">Player Two</h3>
+                            <div>
+                                <input placeholder="First Name" type="text">
+                            </div>
+                            <div>
+                                <input placeholder="Last Name" type="text">
+                            </div>
+                        </div>
+                        <input type="submit" value="Update" />
+                        <button>Cancel</button>
+                    </form>
+            </section>
+        </main>
+        <footer class="footer" aria-labelledby="footer-header">
+            <h4 id="footer-header">Footers go down below.</h4>
+            <nav aria-label="Footer header">
+                <ul role="menu">
+                    <li role="menuitem"><a href="#link-1">First link!</a></li>
+                    <li role="menuitem"><a href="#link-2">Second link!</a></li>
+                    <li role="menuitem"><a href="#link-3">Third link!</a></li>
+                    <li role="menuitem"><a href="#link-4">Fourth link!</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="./static/js/main.js"></script>
 
 </body>
 
