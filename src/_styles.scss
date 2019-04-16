@@ -59,6 +59,29 @@ button,
     display: inline-block;
 }
 
+button {
+
+    &:hover,
+    &:focus {
+        filter: brightness(65%);
+    }
+}
+
+.button {
+    &:hover {
+        filter: brightness(65%);
+    }
+}
+
+.list {
+    padding-left: 2rem;
+    margin-top: 1rem;
+
+    >div {
+        display: inline-block;
+    }
+}
+
 .side-nav {
     position: fixed;
     right: 0px;

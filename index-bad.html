@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>508 Uncompliance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./static/css/normalize.css">
     <link rel="stylesheet" href="./static/css/main.css">
@@ -15,24 +14,22 @@
         <div class="top-nav">
             <div>
                 <div class="h2" id="nav1-header">Navigation</div>
-                <span tabindex="1" class="skip-link-hidden"><a href="#main-content">Skip</a>to main content</span>
-                <ul class="spread-list">
-                    <li role="menuitem">To see the item featured below item click
-                        <a title="To see the i7 computer in this article, click here!" class="bad"
-                            href="#link-1">here!</a>
-                        <!-- title attribute does nothing -->
-                    </li>
-                    <li><a href="#link-2">Second link!</a></li>
-                    <li><a href="#link-3">Third link!</a></li>
-                    <li><a href="#link-4">Fourth link!</a></li>
-                </ul>
+                <a href="#main-content" class="skip-link-hidden">Skip to main content</a>
+                <div class="spread-list list">
+                    <div>To see the item featured below item click
+                        <a class="bad" href="#link-1">here!</a>
+                    </div>
+                    <div><a href="#link-2">Second link!</a></div>
+                    <div><a href="#link-3">Third link!</a></div>
+                    <div><a href="#link-4">Fourth link!</a></div>
+                </div>
             </div>
         </div>
 
         <div class="side-nav">
             <div class="h3" id="nav2-header">Side navigation</div>
             <ul>
-                <li>Go <a href="#link-1" class="bad" title="Go to google.com">here!</a></li>
+                <li>Go <a href="#link-1" class="bad">here!</a></li>
                 <li><a href="#link-2">Second link!</a></li>
                 <li><a href="#link-3">Third link!</a></li>
                 <li><a href="#link-4">Fourth link!</a></li>
@@ -65,19 +62,19 @@
                     <div>
                         <div class="h3">Player One</div>
                         <div>
-                            <input placeholder="First name" type="text">
+                            <input autocomplete="off" placeholder="First name" type="text">
                         </div>
                         <div>
-                            <input placeholder="Last name" id="p1-last-name" type="text">
+                            <input autocomplete="off" placeholder="Last name" id="p1-last-name" type="text">
                         </div>
                     </div>
                     <div>
                         <div class="h3" id="player-two">Player Two</div>
                         <div>
-                            <input placeholder="First name" type="text">
+                            <input autocomplete="off" placeholder="First name" type="text">
                         </div>
                         <div>
-                            <input placeholder="Last name" type="text">
+                            <input autocomplete="off" placeholder="Last name" type="text">
                         </div>
                     </div>
                     <input type="submit" value="Update" />

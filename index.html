@@ -18,10 +18,14 @@
                 <a href="#main-content" class="skip-link-hidden">Skip to main content</a>
                 <ul role="menu" class="spread-list">
                     <li role="menuitem">To see the item featured below item click
-                        <a class="bad" href="#link-1">here <span class="sr-only">to see the i7 computer in this article
-                                click this</span>!</a>
+                        <a class="bad" href="#link-1"><span class="sr-only">To see the i7 computer in this article,
+                                click </span>here!</a>
+                        <!-- always read, good for important information -->
                     </li>
-                    <li role="menuitem"><a href="#link-2">Second link!</a></li>
+                    <li role="menuitem">To see the offer below click
+                        <a class="bad" href="#link-2" title="for a free computer click here">here!</a>
+                        <!-- title is only read upon tabbing, not during normal reading, not good for important information -->
+                    </li>
                     <li role="menuitem"><a href="#link-3">Third link!</a></li>
                     <li role="menuitem"><a href="#link-4">Fourth link!</a></li>
                 </ul>
@@ -64,20 +68,20 @@
                         <div>
                             <div class="h3">Player One</div>
                             <div>
-                                <input type="text" placeholder="First name">
+                                <input autocomplete="off" type="text" placeholder="First name">
                                 <!-- https://www.smashingmagazine.com/2018/06/placeholder-attribute/ -->
                             </div>
                             <div>
-                                <input id="p1-last-name" placeholder="Last name" type="text">
+                                <input autocomplete="off" id="p1-last-name" placeholder="Last name" type="text">
                             </div>
                         </div>
                         <div>
                             <h3 id="player-two">Player Two</h3>
                             <div>
-                                <input placeholder="First Name" type="text">
+                                <input autocomplete="off" placeholder="First Name" type="text">
                             </div>
                             <div>
-                                <input placeholder="Last Name" type="text">
+                                <input autocomplete="off" placeholder="Last Name" type="text">
                             </div>
                         </div>
                         <input type="submit" value="Update" />
