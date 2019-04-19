@@ -66,22 +66,27 @@
                 <h2>Edit Players</h1>
                     <form>
                         <div>
-                            <div class="h3">Player One</div>
+                            <h3>Player One
+                            </h3>
                             <div>
-                                <input autocomplete="off" type="text" placeholder="First name">
-                                <!-- https://www.smashingmagazine.com/2018/06/placeholder-attribute/ -->
+                                <label>First Name
+                                    <input autocomplete="off" type="text">
+                                </label>
                             </div>
                             <div>
-                                <input autocomplete="off" id="p1-last-name" placeholder="Last name" type="text">
+                                <label for="p1-last-name">Last Name</label>
+                                <input autocomplete="off" id="p1-last-name" type="text">
                             </div>
                         </div>
                         <div>
                             <h3 id="player-two">Player Two</h3>
                             <div>
-                                <input autocomplete="off" placeholder="First Name" type="text">
+                                <label id="p2-first-name">First Name (Clicking does not focus input)</label>
+                                <input autocomplete="off" aria-labelledby="player-two p2-first-name" type="text">
                             </div>
                             <div>
-                                <input autocomplete="off" placeholder="Last Name" type="text">
+                                <label id="p2-last-name">Last Name</label>
+                                <input autocomplete="off" aria-labelledby="player-two p2-last-name" type="text">
                             </div>
                         </div>
                         <input type="submit" value="Update" />
